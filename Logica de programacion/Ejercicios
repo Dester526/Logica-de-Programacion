@@ -1,0 +1,22 @@
+INICIO
+/Entrada
+DEFINIR nombreProducto double
+DEFENIR precioFinal DECIMAL
+DEFENIR costoBaseCompra DECIMAL
+DEFENIR porcentajeGanancia DECIMAL
+DEFINIR IMPUESTOIVA
+/Proceso
+Escribir "Costo de fabricacion"
+Leer costoBaseCompra...
+Escribir "Nombre del producto"
+Leer nombreProducto...
+Escribir "Porcentaje esperado de ganacia esperado"
+Leer porcentajeGanancia...
+valorMonetario = costoFabricacion * porcentajeGanancia
+subtotal = costoFabricacion + porcentajeGanancia
+impuestoIva = IMPUESTOIVA * subtotal
+precioAlPublico = valorMonetario + (impuestoIva + subtotal)
+/Salida
+IMPRIMIR "Impuesto IVA es:" + impuestoIva;
+IMPRIMIR "Valor del producto es:" + subtotal;
+IMPRIMIR "Valor total es:" + precioAlPublico;
